@@ -18,7 +18,7 @@ public class  MqConfirmConfig implements ApplicationContextAware {
         rabbitTemplate.setReturnsCallback(new RabbitTemplate.ReturnsCallback() {
             @Override
             public void returnedMessage(ReturnedMessage returned) {
-                log.debug("收到消息的return callback，exchange:{}, key:{}, msg:{}, code:{}, text:{}",
+                log.debug("收到消息的11return callback，exchange:{}, key:{}, msg:{}, code:{}, text:{}",
                         returned.getExchange(), returned.getRoutingKey(), returned.getMessage(),
                         returned.getReplyCode(), returned.getReplyText());
             }
